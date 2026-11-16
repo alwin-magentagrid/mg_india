@@ -220,7 +220,7 @@ export function ContactForm() {
             <Link
               href="/privacy-policy"
               target="_blank"
-              rel="noopener"
+              rel="noopener noreferrer"
               className="text-brand underline transition-colors duration-200 hover:text-brand-hover"
             >
               {CONTACT_FORM.consentLink}
@@ -236,7 +236,7 @@ export function ContactForm() {
         ) : null}
       </div>
 
-      <div aria-hidden="true" className="absolute -left-[9999px] h-0 w-0 overflow-hidden">
+      <div className="sr-only">
         <label htmlFor="companyWebsite">Leave this field empty</label>
         <input
           id="companyWebsite"

@@ -1,13 +1,30 @@
 import { EmailConfigurationError, sendEnquiryEmail } from "@/lib/email/sendEnquiryEmail";
+import { checkRateLimit, getClientIp } from "@/lib/rateLimit";
 import { validateEnquiry } from "@/lib/validateEnquiry";
 
 const HONEYPOT_FIELD = "companyWebsite";
 
-function jsonResponse(body: Record<string, unknown>, status: number): Response {
-  return Response.json(body, { status });
+function jsonResponse(
+  body: Record<string, unknown>,
+  status: number,
+  headers?: HeadersInit,
+): Response {
+  return Response.json(body, { status, headers });
 }
 
 export async function POST(request: Request): Promise<Response> {
+  const ip = getClientIp(request);
+  const rateLimit = checkRateLimit(ip);
+
+  if (!rateLimit.success) {
+    const retryAfter = Math.max(1, Math.ceil((rateLimit.resetAt - Date.now()) / 1000));
+    return jsonResponse(
+      { ok: false, message: "Too many requests. Please wait a moment before trying again." },
+      429,
+      { "Retry-After": String(retryAfter) },
+    );
+  }
+
   let payload: unknown;
   try {
     payload = await request.json();

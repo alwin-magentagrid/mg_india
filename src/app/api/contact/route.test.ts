@@ -1,8 +1,13 @@
 import { afterEach, describe, expect, it, vi } from "vitest";
+import { resetRateLimitStore } from "@/lib/rateLimit";
 import { POST } from "./route";
 
-function post(body: unknown): Request {
-  return new Request("http://localhost/api/contact", { method: "POST", body: typeof body === "string" ? body : JSON.stringify(body) });
+function post(body: unknown, headers?: HeadersInit): Request {
+  return new Request("http://localhost/api/contact", {
+    method: "POST",
+    headers,
+    body: typeof body === "string" ? body : JSON.stringify(body),
+  });
 }
 
 const VALID = {
@@ -19,6 +24,7 @@ const VALID = {
 afterEach(() => {
   vi.unstubAllEnvs();
   vi.restoreAllMocks();
+  resetRateLimitStore();
 });
 
 describe("POST /api/contact", () => {
@@ -53,5 +59,23 @@ describe("POST /api/contact", () => {
     vi.stubEnv("EMAIL_PROVIDER", "");
     vi.spyOn(console, "error").mockImplementation(() => undefined);
     expect((await POST(post(VALID))).status).toBe(503);
+  });
+
+  it("returns 429 with Retry-After when rate limit is exceeded", async () => {
+    vi.stubEnv("EMAIL_PROVIDER", "console");
+    vi.spyOn(console, "info").mockImplementation(() => undefined);
+
+    // Default limit is 5 requests per IP
+    for (let i = 0; i < 5; i++) {
+      const res = await POST(post(VALID, { "x-forwarded-for": "198.51.100.42" }));
+      expect(res.status).toBe(200);
+    }
+
+    const blocked = await POST(post(VALID, { "x-forwarded-for": "198.51.100.42" }));
+    expect(blocked.status).toBe(429);
+    expect(blocked.headers.get("Retry-After")).toBeTruthy();
+    const body = await blocked.json();
+    expect(body.ok).toBe(false);
+    expect(body.message).toMatch(/too many requests/i);
   });
 });

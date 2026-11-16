@@ -96,14 +96,21 @@ export function ServicesMenu({ isActive }: ServicesMenuProps) {
             viewBox="0 0 12 12"
             fill="none"
             aria-hidden="true"
-            className={cn("transition-transform duration-200", isOpen && "rotate-180")}
+            className={cn("pointer-events-none transition-transform duration-200", isOpen && "rotate-180")}
           >
             <path d="M2 4.5l4 4 4-4" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
         </button>
       </div>
 
-      <div id={panelId} hidden={!isOpen} className="absolute top-full left-1/2 z-40 -translate-x-1/2 pt-3">
+      <div
+        id={panelId}
+        hidden={!isOpen}
+        className={cn(
+          "absolute top-full left-1/2 z-40 -translate-x-1/2 pt-3",
+          !isOpen && "hidden",
+        )}
+      >
         <ul className="w-[260px] rounded-card border border-line bg-white p-3 shadow-[0_16px_40px_rgb(51_35_67/0.12)]">
           {SERVICES_SUBMENU.map((link) => (
             <li key={link.href}>
