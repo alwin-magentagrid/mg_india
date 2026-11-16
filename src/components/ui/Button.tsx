@@ -57,7 +57,7 @@ export function Button(props: ButtonProps) {
   const { variant = "primary", size = "md", fullWidth = false, className, children } = props;
 
   const classes = cn(
-    "inline-flex cursor-pointer items-center justify-center gap-2 rounded-full font-semibold whitespace-pre transition-colors duration-200",
+    "inline-flex cursor-pointer items-center justify-center gap-2 rounded-full font-semibold whitespace-nowrap transition-colors duration-200 touch-manipulation",
     "disabled:cursor-not-allowed disabled:opacity-50",
     VARIANT_CLASSES[variant],
     SIZE_CLASSES[size],

@@ -36,7 +36,7 @@ export function Navigation() {
   const closeMenu = () => setIsMenuOpen(false);
 
   return (
-    <header className="border-b border-line-brand bg-canvas">
+    <header className="relative z-50 border-b border-line-brand bg-canvas">
       <nav
         aria-label="Primary"
         className="mx-auto flex h-[76px] w-full max-w-[1440px] items-center justify-between px-5 sm:px-8 xl:px-[68px]"
@@ -85,13 +85,13 @@ export function Navigation() {
           </Link>
           <button
             type="button"
-            className="inline-flex size-11 cursor-pointer items-center justify-center rounded-full text-brand-deep transition-colors duration-200 hover:bg-blush lg:hidden"
+            className="inline-flex size-11 cursor-pointer items-center justify-center rounded-full text-brand-deep transition-colors duration-200 hover:bg-blush active:bg-blush touch-manipulation lg:hidden"
             aria-expanded={isMenuOpen}
             aria-controls={MOBILE_MENU_ID}
             aria-label={isMenuOpen ? "Close menu" : "Open menu"}
             onClick={() => setIsMenuOpen((previous) => !previous)}
           >
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true" className="pointer-events-none">
               {isMenuOpen ? (
                 <path d="M6 6l12 12M18 6L6 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
               ) : (
@@ -102,7 +102,14 @@ export function Navigation() {
         </div>
       </nav>
 
-      <div id={MOBILE_MENU_ID} hidden={!isMenuOpen} className="border-t border-line-brand bg-canvas lg:hidden">
+      <div
+        id={MOBILE_MENU_ID}
+        hidden={!isMenuOpen}
+        className={cn(
+          "border-t border-line-brand bg-canvas lg:hidden",
+          !isMenuOpen && "hidden",
+        )}
+      >
         <ul className="mx-auto flex max-w-[1440px] flex-col px-5 py-3 sm:px-8">
           {PRIMARY_NAV.map((item) => {
             const isActive = isActivePath(pathname, item.href);

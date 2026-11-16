@@ -78,7 +78,7 @@ export function Footer({ variant = "home", showCompanyLine = false }: FooterProp
               <p className="text-t12 text-muted">{FOOTER_COPYRIGHT}</p>
               {showCompanyLine ? <p className="text-t12 text-muted">{FOOTER_COMPANY_LINE}</p> : null}
             </div>
-            <ul className="flex items-center gap-3 text-t12 text-muted">
+            <ul className="flex flex-wrap items-center gap-3 text-t12 text-muted">
               {FOOTER_LEGAL.map((link, index) => (
                 <li key={link.label} className="flex items-center gap-3">
                   {index > 0 ? <span aria-hidden="true">·</span> : null}
