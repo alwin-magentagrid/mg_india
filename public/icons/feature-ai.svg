@@ -1,0 +1,37 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="270" height="216" viewBox="0 0 270 216" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="AI Solutions / Editable neural chip icon / Services" filter="url(#filter0_d_0_4)">
+<path id="Vector" d="M89.1 32.4V56.7M121.5 32.4V56.7M153.9 32.4V56.7M186.3 32.4V56.7M89.1 159.3V183.6M121.5 159.3V183.6M153.9 159.3V183.6M186.3 159.3V183.6M43.2 78.3H70.2M43.2 110.7H70.2M43.2 143.1H70.2M202.5 78.3H229.5M202.5 110.7H229.5M202.5 143.1H229.5" stroke-width="10.8" stroke-linecap="round" stroke="#AD8ABE"/>
+<path id="Vector_2" d="M175.5 62.1H108C90.106 62.1 75.6 76.606 75.6 94.5V140.4C75.6 158.294 90.106 172.8 108 172.8H175.5C193.394 172.8 207.9 158.294 207.9 140.4V94.5C207.9 76.606 193.394 62.1 175.5 62.1Z" fill="url(#paint0_linear_0_4)"/>
+<path id="Vector_3" d="M162 45.9H94.5C76.606 45.9 62.1 60.406 62.1 78.3V124.2C62.1 142.094 76.606 156.6 94.5 156.6H162C179.894 156.6 194.4 142.094 194.4 124.2V78.3C194.4 60.406 179.894 45.9 162 45.9Z" fill="url(#paint1_linear_0_4)" stroke-width="2.7" stroke="#F0DBF8"/>
+<path id="Vector_4" d="M151.2 67.5H105.3C93.3706 67.5 83.7 77.1706 83.7 89.1V113.4C83.7 125.329 93.3706 135 105.3 135H151.2C163.129 135 172.8 125.329 172.8 113.4V89.1C172.8 77.1706 163.129 67.5 151.2 67.5Z" fill="url(#paint2_linear_0_4)"/>
+<path id="Vector_5" d="M126.9 83.7L105.3 105.3L143.1 116.1L126.9 83.7ZM126.9 83.7L151.2 113.4" stroke-width="4.05" stroke="#FFD7EF"/>
+<path id="Vector_6" d="M105.3 113.4C109.774 113.4 113.4 109.774 113.4 105.3C113.4 100.826 109.774 97.2 105.3 97.2C100.826 97.2 97.2 100.826 97.2 105.3C97.2 109.774 100.826 113.4 105.3 113.4Z" fill="white"/>
+<path id="Vector_7" d="M126.9 91.8C131.374 91.8 135 88.1735 135 83.7C135 79.2265 131.374 75.6 126.9 75.6C122.426 75.6 118.8 79.2265 118.8 83.7C118.8 88.1735 122.426 91.8 126.9 91.8Z" fill="white"/>
+<path id="Vector_8" d="M151.2 121.5C155.674 121.5 159.3 117.874 159.3 113.4C159.3 108.926 155.674 105.3 151.2 105.3C146.726 105.3 143.1 108.926 143.1 113.4C143.1 117.874 146.726 121.5 151.2 121.5Z" fill="white"/>
+</g>
+<defs>
+<filter id="filter0_d_0_4" x="-13.5" y="-2.7" width="297" height="243" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="10.8"/>
+<feGaussianBlur stdDeviation="6.75"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.2 0 0 0 0 0.06 0 0 0 0 0.25 0 0 0 0.14 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_4"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_4" result="shape"/>
+</filter>
+<linearGradient id="paint0_linear_0_4" x1="75.6" y1="62.1" x2="184.564" y2="192.326" gradientUnits="userSpaceOnUse">
+<stop stop-color="#9261A5"/>
+<stop offset="1" stop-color="#3F2452"/>
+</linearGradient>
+<linearGradient id="paint1_linear_0_4" x1="62.1" y1="45.9" x2="171.064" y2="176.126" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FAF1FF"/>
+<stop offset="0.48" stop-color="#DEC8ED"/>
+<stop offset="1" stop-color="#AD89C0"/>
+</linearGradient>
+<linearGradient id="paint2_linear_0_4" x1="83.7" y1="67.5" x2="148.68" y2="153.273" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FF91CF"/>
+<stop offset="0.5" stop-color="#DA188A"/>
+<stop offset="1" stop-color="#920B62"/>
+</linearGradient>
+</defs>
+</svg>

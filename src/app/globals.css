@@ -1,0 +1,167 @@
+@import "tailwindcss";
+
+/*
+ * Design tokens extracted from the Figma file "Mg-Free-website" (page "Magenta grid Final").
+ * Fluid type tokens (t29+) reach their Figma desktop size at ~960px and shrink linearly toward 360px.
+ */
+@theme {
+  --color-canvas: #fcfbf9;
+  --color-surface: #faf7fc;
+  --color-lilac: #f1ebf8;
+  --color-blush: #f4ebf9;
+  --color-hero-from: #ffebf6;
+
+  --color-brand: #ce087d;
+  --color-brand-hover: #a90668;
+  --color-brand-nav: #cb177a;
+  --color-brand-accent: #b91974;
+  --color-brand-active: #d62b88;
+  --color-brand-deep: #a41466;
+
+  --color-ink: #301a35;
+  --color-muted: #6f6473;
+  --color-muted-strong: #6b626d;
+  --color-line: #eae2ed;
+  --color-line-brand: rgb(164 20 102 / 0.11);
+
+  --color-plum-900: #332343;
+  --color-plum-800: #382242;
+  --color-plum-700: #4d3467;
+  --color-plum-500: #79619b;
+  --color-plum-line: #775d88;
+  --color-pink-100: #f5dbee;
+  --color-pink-200: #f4b6de;
+  --color-pink-300: #e6bdd9;
+  --color-mist-100: #e8dcee;
+  --color-mist-200: #e4d5ed;
+  --color-night: #211226;
+  --color-night-card: #33203b;
+  --color-night-chip: #3b2040;
+  --color-night-pink: #fa8bcb;
+  --color-night-text: #d5c7da;
+  --color-night-label: #c8afd0;
+  --color-page-tint: #fbf8fc;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-instrument-serif), ui-serif, Georgia, serif;
+
+  --text-t11: 0.6875rem;
+  --text-t12: 0.75rem;
+  --text-t13: 0.8125rem;
+  --text-t14: 0.875rem;
+  --text-t15: 0.9375rem;
+  --text-t16: 1rem;
+  --text-t17: 1.0625rem;
+  --text-t18: 1.125rem;
+  --text-t19: 1.1875rem;
+  --text-t20: 1.25rem;
+  --text-t23: 1.4375rem;
+  --text-t24: clamp(1.125rem, 0.9rem + 1vw, 1.5rem);
+  --text-t29: clamp(1.125rem, 0.7125rem + 1.83vw, 1.812rem);
+  --text-t32: clamp(1.25rem, 0.8rem + 2vw, 2rem);
+  --text-t39: clamp(1.5rem, 0.9375rem + 2.5vw, 2.438rem);
+  --text-t40: clamp(1.562rem, 1rem + 2.5vw, 2.5rem);
+  --text-t42: clamp(1.625rem, 1.025rem + 2.67vw, 2.625rem);
+  --text-t43: clamp(1.688rem, 1.087rem + 2.67vw, 2.688rem);
+  --text-t46: clamp(1.812rem, 1.175rem + 2.83vw, 2.875rem);
+  --text-t48: clamp(1.875rem, 1.2rem + 3vw, 3rem);
+  --text-t49: clamp(1.875rem, 1.163rem + 3.17vw, 3.062rem);
+  --text-t51: clamp(2rem, 1.288rem + 3.17vw, 3.188rem);
+  --text-t52: clamp(2rem, 1.25rem + 3.33vw, 3.25rem);
+  --text-t54: clamp(2.062rem, 1.275rem + 3.5vw, 3.375rem);
+  --text-t56: clamp(2.188rem, 1.4rem + 3.5vw, 3.5rem);
+  --text-t34: clamp(1.31rem, 0.825rem + 2.17vw, 2.125rem);
+  --text-t44: clamp(1.7rem, 1.08rem + 2.78vw, 2.75rem);
+  --text-t55: clamp(2.13rem, 1.35rem + 3.48vw, 3.4375rem);
+  --text-t57: clamp(2.2rem, 1.39rem + 3.62vw, 3.5625rem);
+  --text-t58: clamp(2.25rem, 1.425rem + 3.67vw, 3.625rem);
+  --text-t60: clamp(2.325rem, 1.47rem + 3.8vw, 3.75rem);
+  --text-t74: clamp(2.87rem, 1.81rem + 4.68vw, 4.625rem);
+  --text-t76: clamp(2.945rem, 1.86rem + 4.82vw, 4.75rem);
+  --text-t9: 0.5625rem;
+  --text-t10: 0.625rem;
+  --text-t22: 1.375rem;
+  --text-t66: clamp(2.562rem, 1.625rem + 4.17vw, 4.125rem);
+
+  --radius-card: 20px;
+  --radius-panel: 24px;
+  --radius-band: 28px;
+  --radius-hero: 32px;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: var(--color-canvas);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    line-height: 1.45;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  :focus-visible {
+    outline: 3px solid var(--color-brand);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@keyframes marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee {
+  mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+}
+
+.marquee-track {
+  animation: marquee-scroll 45s linear infinite;
+}
+
+.marquee:hover .marquee-track,
+.marquee:focus-within .marquee-track,
+.marquee-track[data-paused="true"] {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee {
+    mask-image: none;
+  }
+
+  .marquee-track {
+    animation: none;
+    width: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 16px;
+  }
+
+  .marquee-duplicate {
+    display: none;
+  }
+}

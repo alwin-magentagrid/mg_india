@@ -1,0 +1,9 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle id="Small magenta orb" cx="12" cy="12" r="12" fill="url(#paint0_linear_0_11)"/>
+<defs>
+<linearGradient id="paint0_linear_0_11" x1="-2.88" y1="3.84" x2="16.32" y2="18.24" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FFB4E3"/>
+<stop offset="1" stop-color="#C50878"/>
+</linearGradient>
+</defs>
+</svg>
