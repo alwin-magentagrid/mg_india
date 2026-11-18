@@ -9,7 +9,7 @@ import {
   FOOTER_TAGLINE,
   type FooterLinkItem,
 } from "@/content/shared";
-import { CONTACT_EMAIL } from "@/lib/site";
+import { CONTACT_EMAIL, CONTACT_PHONE_DISPLAY, CONTACT_PHONE_TEL } from "@/lib/site";
 import { Container } from "@/components/ui/Container";
 import { Brand } from "./Brand";
 
@@ -67,10 +67,16 @@ export function Footer({ variant = "home", showCompanyLine = false }: FooterProp
               >
                 {CONTACT_EMAIL} <span aria-hidden="true">↗</span>
               </a>
+              <a
+                href={`tel:${CONTACT_PHONE_TEL}`}
+                className="mt-2 block text-t14 font-medium text-ink transition-colors duration-200 hover:text-brand"
+              >
+                Call Us {CONTACT_PHONE_DISPLAY}
+              </a>
             </div>
             <FooterColumn title="Explore" links={FOOTER_EXPLORE} />
             <FooterColumn title="Solutions" links={FOOTER_SOLUTIONS[variant]} />
-            <FooterColumn title="Let’s connect" links={FOOTER_CONNECT} />
+            <FooterColumn title="Let’s Connect" links={FOOTER_CONNECT} />
           </div>
 
           <div className="mt-[60px] flex flex-col gap-3 border-t border-line pt-[27px] pb-[44px] sm:flex-row sm:items-center sm:justify-between">

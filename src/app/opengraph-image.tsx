@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-export const alt = "MagentaGrid India — website design and development company in Kerala";
+export const alt = "MagentaGrid India, website design and development company in Kerala";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 

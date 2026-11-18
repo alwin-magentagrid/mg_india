@@ -2,8 +2,8 @@ import type { FaqItem } from "./shared";
 
 export const HOME_FAQ = {
   eyebrow: "A LITTLE CLARITY",
-  headingLead: "Good questions.",
-  headingAccent: "Honest answers.",
+  headingLead: "Good questions",
+  headingAccent: "Honest answers",
   intro:
     "Starting a website shouldn’t feel complicated. Here are a few things worth knowing.",
 };
@@ -58,14 +58,14 @@ export interface HomeServiceCard {
 export const HOME_SERVICES = {
   eyebrow: "WHAT WE DO",
   headingLead: "Your next chapter.",
-  headingAccent: "Built for digital.",
+  headingAccent: "Built for digital",
   subheading:
     "From your first website to your next big idea, find the right solution for your business.",
   cards: [
     {
       title: "Web Development",
       description:
-        "Fast, accessible websites built for performance and growth - helping you attract, engage and convert more customers.",
+        "Fast, accessible websites built for performance and growth, helping you attract, engage and convert more customers.",
       linkLabel: "Explore Web Development ↗",
       href: "/services/web-development",
       iconSrc: "/icons/web-development.svg",
@@ -75,7 +75,7 @@ export const HOME_SERVICES = {
       description:
         "Secure, scalable custom software that streamlines operations & drives long-term growth.",
       linkLabel: "Explore Software Solutions ↗",
-      href: "/services#custom-software",
+      href: "/services/software-development",
       iconSrc: "/icons/software-development.svg",
     },
     {
@@ -83,7 +83,7 @@ export const HOME_SERVICES = {
       description:
         "Seamless app experiences that keep customers engaged and your brand within reach.",
       linkLabel: "Explore Mobile Apps ↗",
-      href: "/services#mobile-apps",
+      href: "/services/mobile-app-development",
       iconSrc: "/icons/mobile-app-development.svg",
     },
     {
@@ -91,7 +91,7 @@ export const HOME_SERVICES = {
       description:
         "Intelligent AI solutions built to automate complex processes, enhance productivity & unlock actionable insights from your data.",
       linkLabel: "Explore AI Solutions ↗",
-      href: "/services#ai-solutions",
+      href: "/services/ai-solutions",
       iconSrc: "/icons/ai-solutions.svg",
     },
   ] satisfies HomeServiceCard[],
@@ -99,10 +99,10 @@ export const HOME_SERVICES = {
 
 export const HOME_WHY = {
   eyebrow: "WHY MAGENTAGRID",
-  headingLead: "Big on your ambition.",
-  headingAccent: "Personal in our approach.",
+  headingLead: "Big on your ambition",
+  headingAccent: "Personal in our approach",
   statement:
-    "We deliver high-quality digital solutions with a focus on performance, scalability and user experience - helping businesses grow faster and smarter.",
+    "We deliver high-quality digital solutions with a focus on performance, scalability and user experience, helping businesses grow faster and smarter.",
   cta: { label: "Meet Your Digital Team ↗", href: "/about" },
   points: [
     {
@@ -123,7 +123,7 @@ export const HOME_WHY = {
 export const HOME_STORY = {
   eyebrow: "A CUSTOMER’S PERSPECTIVE",
   quote:
-    "Our booking platform went live ahead of schedule and the feedback from customers has been brilliant. Scheduling, availability, payments - it all just works. ",
+    "Our booking platform went live ahead of schedule and the feedback from customers has been brilliant. Scheduling, availability, payments, it all just works.",
   name: "Bala Murugon",
   role: "Arbust · MagentaGrid customer",
 };

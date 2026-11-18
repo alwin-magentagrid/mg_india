@@ -15,6 +15,7 @@ import { SERVICES_FAQ_ITEMS, SERVICE_FEATURES } from "./services";
 import { WEB_FAQ_ITEMS } from "./web-development";
 import { STARTER_FAQ_ITEMS } from "./starter";
 import { CMS_FAQ_ITEMS } from "./business-cms";
+import { AI_PAGE, MOBILE_PAGE, SOFTWARE_PAGE, type ServicePageContent } from "./service-pages";
 
 const HOME_CRUMB = { name: "Home", path: "/" };
 const SERVICES_CRUMB = { name: "Services", path: PAGE_SEO.services.path };
@@ -47,12 +48,19 @@ const SERVICE_SCHEMA_NAMES: Record<string, string> = {
   "ai-solutions": "AI solutions",
 };
 
+const SERVICE_PAGE_PATHS: Record<string, string> = {
+  "web-development": PAGE_SEO.webDevelopment.path,
+  "custom-software": PAGE_SEO.softwareDevelopment.path,
+  "mobile-apps": PAGE_SEO.mobileAppDevelopment.path,
+  "ai-solutions": PAGE_SEO.aiSolutions.path,
+};
+
 export const SERVICES_SCHEMA: JsonLdObject[] = [
   ...SERVICE_FEATURES.map((feature) =>
     buildServiceSchema({
       name: SERVICE_SCHEMA_NAMES[feature.id] ?? feature.headingLead,
       description: feature.body,
-      path: feature.id === "web-development" ? PAGE_SEO.webDevelopment.path : `${PAGE_SEO.services.path}#${feature.id}`,
+      path: SERVICE_PAGE_PATHS[feature.id] ?? `${PAGE_SEO.services.path}#${feature.id}`,
     }),
   ),
   buildBreadcrumbSchema([HOME_CRUMB, SERVICES_CRUMB]),
@@ -90,3 +98,16 @@ export const CONTACT_SCHEMA: JsonLdObject[] = [
   buildContactPageSchema(PAGE_SEO.contact.path, "Contact MagentaGrid India", PAGE_SEO.contact.description),
   buildBreadcrumbSchema([HOME_CRUMB, { name: "Contact", path: PAGE_SEO.contact.path }]),
 ];
+
+function buildServicePageSchema(content: ServicePageContent): JsonLdObject[] {
+  const seo = PAGE_SEO[content.seoKey];
+  return [
+    buildServiceSchema({ name: content.schemaName, description: seo.description, path: seo.path }),
+    buildBreadcrumbSchema([HOME_CRUMB, SERVICES_CRUMB, { name: content.crumbLabel, path: seo.path }]),
+    buildFaqSchema(content.faqItems),
+  ];
+}
+
+export const SOFTWARE_SCHEMA: JsonLdObject[] = buildServicePageSchema(SOFTWARE_PAGE);
+export const MOBILE_SCHEMA: JsonLdObject[] = buildServicePageSchema(MOBILE_PAGE);
+export const AI_SCHEMA: JsonLdObject[] = buildServicePageSchema(AI_PAGE);

@@ -16,8 +16,8 @@ export const LEGAL_LAST_UPDATED = "2026-11-16";
 
 export const PRIVACY_POLICY: LegalPage = {
   eyebrow: "PRIVACY POLICY",
-  headingLead: "Your details.",
-  headingAccent: "Handled with care.",
+  headingLead: "Your details",
+  headingAccent: "Handled with care",
   intro:
     "This policy explains what personal data MagentaGrid collects through this website, why we use it, who we share it with and the choices you have.",
   lastUpdated: LEGAL_LAST_UPDATED,
@@ -36,7 +36,7 @@ export const PRIVACY_POLICY: LegalPage = {
         "Your phone or WhatsApp number, if you choose to share it",
         "The type of help you need and your existing website address, if you add one",
         "The message you write to us",
-        "A record that you acknowledged this privacy policy, and the date you contacted us",
+        "A record that you acknowledged this privacy policy and the date you contacted us",
       ],
     },
     {
@@ -56,19 +56,19 @@ export const PRIVACY_POLICY: LegalPage = {
     },
     {
       type: "paragraph",
-      text: "We process enquiry data on the basis of the consent you give when you tick the acknowledgement box and send the form, and for legitimate uses permitted by law, such as responding to a request you started. We never sell your personal data, and we will not add you to marketing emails without asking first.",
+      text: "We process enquiry data on the basis of the consent you give when you tick the acknowledgement box and send the form and for legitimate uses permitted by law, such as responding to a request you started. We never sell your personal data and we will not add you to marketing emails without asking first.",
     },
     { type: "heading", text: "4. Who we share it with" },
     {
       type: "paragraph",
-      text: "We only share personal data with service providers who help us run the website and reply to you, and only as much as they need:",
+      text: "We only share personal data with service providers who help us run the website and reply to you and only as much as they need:",
     },
     {
       type: "list",
       items: [
         "Our website hosting provider, which serves the website and keeps technical logs",
         "Our email delivery provider, which forwards your enquiry to our team inbox",
-        "WhatsApp (Meta), if you choose to contact us there; their own privacy policy applies to that chat",
+        "WhatsApp (Meta), if you choose to contact us there and their own privacy policy applies to that chat",
         "Government or law enforcement authorities, where we are required to by Indian law",
       ],
     },
@@ -89,19 +89,19 @@ export const PRIVACY_POLICY: LegalPage = {
         "Ask for a summary of the personal data we hold about you and how we use it",
         "Ask us to correct, complete or update your data",
         "Ask us to erase your data when it is no longer needed for the purpose you shared it for",
-        "Withdraw your consent at any time; this does not affect anything we did before you withdrew it",
+        "Withdraw your consent at any time, which does not affect anything we did before you withdrew it",
         "Nominate another person to exercise your rights if you die or become unable to",
-        "Raise a grievance with us, and if you are not satisfied with our response, complain to the Data Protection Board of India",
+        "Raise a grievance with us and if you are not satisfied with our response, complain to the Data Protection Board of India",
       ],
     },
     {
       type: "paragraph",
-      text: "To use any of these rights, email contact@magentagrid.com with the subject “Privacy request”. We may ask you to confirm your identity before we act, and we will respond within a reasonable time.",
+      text: "To use any of these rights, email contact@magentagrid.com with the subject “Privacy request”. We may ask you to confirm your identity before we act and we will respond within a reasonable time.",
     },
     { type: "heading", text: "7. Keeping your data safe" },
     {
       type: "paragraph",
-      text: "The website runs over an encrypted HTTPS connection, enquiry details are sent securely to our inbox, and access to enquiries is limited to the people who need it to reply to you. No method of sending or storing data online is completely secure, but we take reasonable steps to protect it and will notify affected people and the Data Protection Board of India of a personal data breach as the law requires.",
+      text: "The website runs over an encrypted HTTPS connection, enquiry details are sent securely to our inbox and access to enquiries is limited to the people who need it to reply to you. No method of sending or storing data online is completely secure, but we take reasonable steps to protect it and will notify affected people and the Data Protection Board of India of a personal data breach as the law requires.",
     },
     { type: "heading", text: "8. Children" },
     {
@@ -123,8 +123,8 @@ export const PRIVACY_POLICY: LegalPage = {
 
 export const COOKIE_POLICY: LegalPage = {
   eyebrow: "COOKIE POLICY",
-  headingLead: "No tracking.",
-  headingAccent: "Nothing hidden.",
+  headingLead: "No tracking",
+  headingAccent: "Nothing hidden",
   intro:
     "This policy explains how the MagentaGrid India website uses cookies and similar technologies. The short version: it doesn’t set any.",
   lastUpdated: LEGAL_LAST_UPDATED,

@@ -8,7 +8,7 @@ export const CONTACT_HERO = {
   seoHeading: "Contact MagentaGrid, a website design company in Kerala",
   badge: "Contact us",
   headingLines: ["Good websites start", "with a "],
-  headingAccent: "hello.",
+  headingAccent: "hello",
   bodyLines: [
     "Ready for your Starter website, or just have a question?",
     "Tell us a little about your business. We’ll make the next step clear.",
@@ -18,13 +18,13 @@ export const CONTACT_HERO = {
 
 export const CONTACT_INTRO = {
   eyebrow: "Let’s get you started",
-  headingLead: "Your business.",
+  headingLead: "Your business",
   headingRest: "Your next ",
-  headingAccent: "chapter.",
+  headingAccent: "chapter",
   body: "A first website, a fresh start or a quick question. Whatever brings you here, we’re happy to help.",
   promise: {
     lines: ["No pressure.", "No surprise bills."],
-    body: "Your Starter website is ₹5,000. Any optional extras are quoted upfront, and only go ahead if you say yes.",
+    body: "Your Starter website is ₹5,000. Any optional extras are quoted upfront and only go ahead if you say yes.",
     commitment: "You decide what comes next.",
   },
   help: {
@@ -65,21 +65,21 @@ export const CONTACT_FORM = {
 export const CONTACT_NEXT = {
   eyebrow: "After you say hello",
   heading: "A clear next step. ",
-  headingAccent: "Not a sales pitch.",
+  headingAccent: "Not a sales pitch",
   steps: [
     {
       icon: "/icons/contact/message-square.svg",
-      title: "We read your enquiry.",
+      title: "We read your enquiry",
       body: "We look at what your business needs and any questions you’ve shared.",
     },
     {
       icon: "/icons/contact/messages-square.svg",
-      title: "We talk it through.",
+      title: "We talk it through",
       body: "We reply by email, answer your questions and ask for anything else we need.",
     },
     {
       icon: "/icons/contact/arrow-up-right.svg",
-      title: "You choose the next step.",
+      title: "You choose the next step",
       body: "If you’re ready, we agree what’s included. Any optional costs are clear before you decide.",
     },
   ],

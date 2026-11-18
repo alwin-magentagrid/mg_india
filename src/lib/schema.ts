@@ -1,4 +1,4 @@
-import { COMPANY_LEGAL_NAME, CONTACT_EMAIL, INSTAGRAM_URL, LINKEDIN_URL, SITE_NAME, SITE_URL } from "@/lib/site";
+import { COMPANY_LEGAL_NAME, CONTACT_EMAIL, CONTACT_PHONE_TEL, INSTAGRAM_URL, LINKEDIN_URL, SITE_NAME, SITE_URL } from "@/lib/site";
 
 export type JsonLdObject = Record<string, unknown>;
 
@@ -52,6 +52,7 @@ export function buildOrganizationSchema(): JsonLdObject {
     url: SITE_URL,
     logo: absoluteUrl("/images/logo.png"),
     email: CONTACT_EMAIL,
+    telephone: CONTACT_PHONE_TEL,
     foundingDate: "2026-05-22",
     address: {
       "@type": "PostalAddress",

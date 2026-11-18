@@ -75,7 +75,7 @@ function MockBrowser() {
       <div style={{ ...rect(32, 190, 135, 5), borderRadius: u(2), background: "#cabbd3" }} />
       <div style={{ ...rect(32, 212, 120, 24), borderRadius: u(12), backgroundImage: gradient(165, "#ea2c9d", "#b50068") }} />
       <Text size={8} className="leading-[1.4] font-semibold whitespace-pre text-white" style={{ left: u(46), top: u(218) }}>
-        {"Let’s connect  ↗"}
+        {"Let’s Connect  ↗"}
       </Text>
       <div style={{ ...rect(264, 91, 130, 150), borderRadius: u(18), backgroundImage: gradient(123, "#e4d3ef", "#b999d1") }} />
       <StageImage src="/images/starter/magenta-sculpture.svg" style={rect(287, 111, 86, 86)} />

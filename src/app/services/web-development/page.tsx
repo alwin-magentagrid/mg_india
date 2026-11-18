@@ -35,7 +35,7 @@ export default function WebDevelopmentPage() {
         breadcrumb={[
           { label: "Home", href: "/" },
           { label: "Services", href: "/services" },
-          { label: "Web development" },
+          { label: "Web Development" },
         ]}
         eyebrow={WEB_HERO.eyebrow}
         headingLead={WEB_HERO.headingLead}

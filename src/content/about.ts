@@ -1,15 +1,15 @@
 export const ABOUT_HERO = {
   seoHeading: "A Kerala IT Company Building Practical Digital Solutions",
   headingLead: "Where Humble Beginnings Meet Bold",
-  headingAccent: "Digital Innovation.",
+  headingAccent: "Digital Innovation",
   body: "MagentaGrid partners with startups, SMEs and growing enterprises to build reliable digital solutions that solve real-world business challenges. Our focus is simple: create technology that is easy to use, cost-effective and built to grow with your business.",
-  cta: { label: "Let’s talk about your idea ↗", href: "/contact" },
+  cta: { label: "Let’s Talk About Your Idea ↗", href: "/contact" },
 };
 
 export const ABOUT_PURPOSE = {
   eyebrow: "ABOUT MAGENTAGRID INDIA",
   headingLead: "Big ideas shouldn’t",
-  headingAccent: "need a big budget.",
+  headingAccent: "need a big budget",
   paragraphs: [
     "MagentaGrid Technologies Private Limited is a Kerala-registered company focused on practical digital solutions for small and medium-sized businesses.",
     "For many businesses, the first step is a website: a clear way to introduce services, build confidence and make it easier for customers to get in touch. That is why affordable, custom web development is a priority in our India offering.",
@@ -24,13 +24,13 @@ export const ABOUT_MISSION = {
   cards: [
     {
       label: "OUR MISSION",
-      title: "Make digital progress more accessible.",
+      title: "Make digital progress more accessible",
       body: "Help businesses move forward with useful design and technology, a manageable starting scope and clear decisions about what to build next.",
     },
     {
       label: "OUR VISION",
-      title: "Be a trusted partner as businesses grow.",
-      body: "Build lasting relationships by making good digital solutions easier to access, understand and improve — from Kerala to businesses across India.",
+      title: "Be a trusted partner as businesses grow",
+      body: "Build lasting relationships by making good digital solutions easier to access, understand and improve, from Kerala to businesses across India.",
     },
   ],
 };
@@ -54,8 +54,8 @@ export const ABOUT_CAPABILITIES = {
 
 export const ABOUT_COMPANY = {
   eyebrow: "THE COMPANY BEHIND THE WORK",
-  headingLead: "Registered in Kerala.",
-  headingAccent: "Building for businesses across India.",
+  headingLead: "Registered in Kerala",
+  headingAccent: "Building for businesses across India",
   name: { label: "COMPANY NAME", value: "MagentaGrid Technologies Private Limited" },
   cin: {
     label: "CORPORATE IDENTIFICATION NUMBER",
@@ -83,7 +83,7 @@ export const ABOUT_VALUE_PROPOSITION = {
     {
       icon: "target",
       title: "Product Mindset",
-      description: "We don’t just write code; we act as a strategic partner focused on achieving your business objectives first.",
+      description: "We don’t just write code, we act as a strategic partner focused on achieving your business objectives first.",
     },
     {
       icon: "currency",

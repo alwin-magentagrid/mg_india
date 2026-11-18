@@ -32,7 +32,7 @@ export default function StarterWebsitePage() {
         seoHeading={STARTER_HERO.seoHeading}
         breadcrumb={[
           { label: "Home", href: "/" },
-          { label: "Web development", href: "/services/web-development" },
+          { label: "Web Development", href: "/services/web-development" },
           { label: "Starter" },
         ]}
         eyebrow={STARTER_HERO.eyebrow}

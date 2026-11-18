@@ -17,7 +17,7 @@ export function Process() {
 
         <ol className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4 lg:gap-[13px]">
           {PROCESS_STEPS.map((step, index) => (
-            <li key={step.title} className="min-h-[212px] rounded-[18px] bg-white px-[22px] pt-[18px] pb-5 lg:h-[212px]">
+            <li key={step.title} className="min-h-[212px] rounded-[18px] bg-white px-[22px] pt-[18px] pb-5">
               <p className="text-t29 font-medium text-brand">{String(index + 1).padStart(2, "0")}</p>
               <h3 className="mt-[17px] text-t18 font-semibold text-ink">{step.title}</h3>
               <p className="mt-[13px] text-t14 text-muted">{step.description}</p>

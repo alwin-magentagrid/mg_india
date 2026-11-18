@@ -58,12 +58,12 @@ export const PRIMARY_NAV: NavLink[] = [
 
 export const SERVICES_SUBMENU: NavLink[] = [
   { label: "Web Development", href: "/services/web-development" },
-  { label: "Software Development", href: "/services#custom-software" },
-  { label: "Mobile App Development", href: "/services#mobile-apps" },
-  { label: "AI Solutions", href: "/services#ai-solutions" },
+  { label: "Software Development", href: "/services/software-development" },
+  { label: "Mobile App Development", href: "/services/mobile-app-development" },
+  { label: "AI Solutions", href: "/services/ai-solutions" },
 ];
 
-export const NAV_CTA_LABEL = "Let’s talk";
+export const NAV_CTA_LABEL = "Let’s Talk";
 
 export const FOOTER_TAGLINE =
   "Thoughtful websites and digital solutions for businesses in Kerala and across India.";
@@ -71,41 +71,41 @@ export const FOOTER_TAGLINE =
 export const FOOTER_EXPLORE: FooterLinkItem[] = [
   { label: "Home", href: "/" },
   { label: "Services", href: "/services" },
-  { label: "Website plans", href: "/services/web-development#plans" },
+  { label: "Website Plans", href: "/services/web-development#plans" },
   { label: "About MagentaGrid", href: "/about" },
 ];
 
 export const FOOTER_SOLUTIONS = {
   home: [
-    { label: "Website design", href: "/services/web-development" },
-    { label: "E-commerce" },
-    { label: "Hosting & care" },
-    { label: "SEO & growth" },
+    { label: "Website Design", href: "/services/web-development" },
+    { label: "E-Commerce" },
+    { label: "Hosting & Care" },
+    { label: "SEO & Growth" },
   ],
   services: [
-    { label: "Web development", href: "/services/web-development" },
-    { label: "Custom software" },
-    { label: "Mobile apps" },
-    { label: "AI solutions" },
+    { label: "Web Development", href: "/services/web-development" },
+    { label: "Custom Software", href: "/services/software-development" },
+    { label: "Mobile Apps", href: "/services/mobile-app-development" },
+    { label: "AI Solutions", href: "/services/ai-solutions" },
   ],
   web: [
-    { label: "Website design", href: "/services/web-development" },
+    { label: "Website Design", href: "/services/web-development" },
     { label: "Business CMS", href: "/services/web-development/business-cms" },
-    { label: "Bespoke websites" },
-    { label: "SEO & growth" },
+    { label: "Bespoke Websites" },
+    { label: "SEO & Growth" },
   ],
 } satisfies Record<string, FooterLinkItem[]>;
 
 export const FOOTER_CONNECT: FooterLinkItem[] = [
-  { label: "Start a project", href: "/contact" },
-  { label: "Project enquiries", href: `mailto:${CONTACT_EMAIL}` },
+  { label: "Start a Project", href: "/contact" },
+  { label: "Project Enquiries", href: `mailto:${CONTACT_EMAIL}` },
   { label: "LinkedIn", href: LINKEDIN_URL ?? undefined },
   { label: "Instagram", href: INSTAGRAM_URL ?? undefined },
 ];
 
 export const FOOTER_LEGAL: FooterLinkItem[] = [
-  { label: "Privacy policy", href: "/privacy-policy" },
-  { label: "Cookie policy", href: "/cookie-policy" },
+  { label: "Privacy Policy", href: "/privacy-policy" },
+  { label: "Cookie Policy", href: "/cookie-policy" },
 ];
 
 export const FOOTER_COPYRIGHT = "© 2026 MagentaGrid. All rights reserved.";
@@ -122,12 +122,12 @@ export const PROCESS_STEPS: ProcessStep[] = [
   {
     title: "Discovery & Strategy",
     description:
-      "Every project starts with a deep dive into your business, market, and user needs. We define the right strategy to ensure the best return on investment.",
+      "Every project starts with a deep dive into your business, market and user needs. We define the right strategy to ensure the best return on investment.",
   },
   {
     title: "Custom Designing",
     description:
-      "We translate strategy into clean, intuitive, and beautiful user interfaces. We design and prototype your ideas before we build them.",
+      "We translate strategy into clean, intuitive and beautiful user interfaces. We design and prototype your ideas before we build them.",
   },
   {
     title: "Development & Testing",
@@ -145,26 +145,26 @@ export type CtaVariant = "home" | "services" | "website";
 
 const CTA_WEBSITE: CtaContent = {
   eyebrow: "YOUR NEXT CHAPTER STARTS HERE",
-  heading: "Your business idea. Our next conversation.",
-  accent: "Start small. Build with purpose.",
+  heading: "Your business idea. Our next conversation",
+  accent: "Start small. Build with purpose",
   body: "Tell us about your business. We’ll help you find the right website package.",
-  buttonLabel: "Let’s talk about your project ↗",
+  buttonLabel: "Let’s Talk About Your Project ↗",
 };
 
 export const CTA_CONTENT: Record<CtaVariant, CtaContent> = {
   home: {
     eyebrow: "YOUR NEXT CHAPTER STARTS HERE",
-    heading: "Your business. A bigger future.",
-    accent: "Let’s build it together.",
+    heading: "Your business. A bigger future",
+    accent: "Let’s build it together",
     body: "Tell us what you have in mind. We’ll help you find a way forward.",
-    buttonLabel: "Let’s discuss ↗",
+    buttonLabel: "Let’s Discuss ↗",
   },
   services: {
     eyebrow: "YOUR NEXT CHAPTER STARTS HERE",
-    heading: "Your business. A bigger future.",
-    accent: "Let’s build it together.",
+    heading: "Your business. A bigger future",
+    accent: "Let’s build it together",
     body: "Tell us what you have in mind. We’ll help you find a way forward.",
-    buttonLabel: "Let’s talk about your project ↗",
+    buttonLabel: "Let’s Talk About Your Project ↗",
   },
   website: CTA_WEBSITE,
 };
@@ -182,7 +182,7 @@ export interface PlansContent {
 export const PLANS_CONTENT: Record<PlansVariant, PlansContent> = {
   home: {
     eyebrow: "WEBSITE PLANS",
-    heading: "Small Start. Big Possibilities.",
+    heading: "Small Start. Big Possibilities",
     subheading:
       "A first website, a CMS-powered site or a bespoke solution. Choose your starting point.",
     footnote:
@@ -190,7 +190,7 @@ export const PLANS_CONTENT: Record<PlansVariant, PlansContent> = {
   },
   web: {
     eyebrow: "WEBSITE PLANS",
-    heading: "Small Start. Big Possibilities.",
+    heading: "Small Start. Big Possibilities",
     subheading:
       "A first website, a CMS-powered site or a bespoke solution. Choose your starting point.",
     footnote:
@@ -258,8 +258,8 @@ export function getPlanCards(): PlanCardContent[] {
 
 export const COMPARE_CONTENT = {
   eyebrow: "THE DETAILS, SIDE BY SIDE",
-  heading: "Compare website plans.",
-  accent: "Choose with clarity.",
+  heading: "Compare website plans",
+  accent: "Choose with clarity",
   body: "Website development cost in India depends on the page scope, features and integrations. Compare these starting points, then let’s agree the right fit for your business.",
   calloutLines: ["Need something bespoke?", "Let’s scope the right solution."],
   footnote:
@@ -267,7 +267,7 @@ export const COMPARE_CONTENT = {
   columns: [
     { name: "Starter", price: "₹5,000", note: "Indicative project price", cta: "Choose Starter ↗", href: "/services/web-development/starter-website" },
     { name: "Business CMS", price: "₹15,000", note: "Indicative project price", cta: "Choose Business CMS ↗", href: "/services/web-development/business-cms" },
-    { name: "Bespoke", price: "Let’s talk", note: "Quoted to your requirements", cta: "Let’s talk ↗", href: "/contact" },
+    { name: "Bespoke", price: "Let’s talk", note: "Quoted to your requirements", cta: "Let’s Talk ↗", href: "/contact" },
   ],
 };
 

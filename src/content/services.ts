@@ -2,20 +2,20 @@ import type { FaqItem } from "./shared";
 
 export const SERVICES_HERO = {
   seoHeading: "Web, Software, Mobile App and AI Development Company in Kerala",
-  eyebrow: "ONE DIGITAL PARTNER. MANY POSSIBILITIES.",
-  headingLead: "The right team.",
-  headingAccent: "For what’s next.",
+  eyebrow: "ONE DIGITAL PARTNER. MANY POSSIBILITIES",
+  headingLead: "The right team",
+  headingAccent: "For what’s next",
   subline:
     "Websites that connect. Software that simplifies. Apps that engage. AI that gets to work.",
   body: "We connect custom design and dependable engineering to solve real business challenges from your first website to your next digital product.",
-  primaryCta: { label: "Let’s shape your project ↗", href: "/contact" },
-  secondaryCta: { label: "Explore our services ↓", href: "#web-development" },
+  primaryCta: { label: "Let’s Shape Your Project ↗", href: "/contact" },
+  secondaryCta: { label: "Explore Our Services ↓", href: "#web-development" },
   imageAlt: "Illustration of web, software, mobile app and AI services around a magenta arch",
   links: [
-    { label: "Web development ↗", href: "#web-development" },
-    { label: "Custom software ↗", href: "#custom-software" },
-    { label: "Mobile apps ↗", href: "#mobile-apps" },
-    { label: "AI solutions ↗", href: "#ai-solutions" },
+    { label: "Web Development ↗", href: "#web-development" },
+    { label: "Custom Software ↗", href: "#custom-software" },
+    { label: "Mobile Apps ↗", href: "#mobile-apps" },
+    { label: "AI Solutions ↗", href: "#ai-solutions" },
   ],
 };
 
@@ -60,8 +60,8 @@ export const SERVICE_FEATURES: ServiceFeatureContent[] = [
       "Booking, orders & workflow systems",
       "API integrations & modernisation",
     ],
-    ctaLabel: "Discuss Your Software ideas ↗",
-    ctaHref: "/contact",
+    ctaLabel: "Discuss Your Software Ideas ↗",
+    ctaHref: "/services/software-development",
     visualSrc: "/icons/feature-software.svg",
     caption: "Your workflows. One connected system.",
   },
@@ -77,7 +77,7 @@ export const SERVICE_FEATURES: ServiceFeatureContent[] = [
       "App testing & release support",
     ],
     ctaLabel: "Let’s Discuss Your App ↗",
-    ctaHref: "/contact",
+    ctaHref: "/services/mobile-app-development",
     visualSrc: "/icons/feature-mobile.svg",
     caption: "Useful experiences, always within reach.",
   },
@@ -85,15 +85,15 @@ export const SERVICE_FEATURES: ServiceFeatureContent[] = [
     id: "ai-solutions",
     label: "04 / AI SOLUTIONS",
     headingLead: "Make everyday work",
-    headingAccent: "a little more intelligent.",
+    headingAccent: "a little more intelligent",
     body: "Practical AI engines that supports real tasks: answering questions, finding information and handling repetitive work. We focus on useful integrations your team can put to work.",
     bullets: [
       "AI assistants & knowledge search",
       "Workflow & document automation",
       "Model integration & insight tools",
     ],
-    ctaLabel: "Explore your AI opportunity ↗",
-    ctaHref: "/contact",
+    ctaLabel: "Explore Your AI Opportunity ↗",
+    ctaHref: "/services/ai-solutions",
     visualSrc: "/icons/feature-ai.svg",
     caption: "Less repetition. More possibility.",
   },
@@ -101,8 +101,8 @@ export const SERVICE_FEATURES: ServiceFeatureContent[] = [
 
 export const SERVICES_FAQ = {
   eyebrow: "A LITTLE CLARITY",
-  headingLead: "Good questions.",
-  headingAccent: "Useful answers.",
+  headingLead: "Good questions",
+  headingAccent: "Useful answers",
   intro: "Not sure where to start? A conversation is often the best first step.",
 };
 

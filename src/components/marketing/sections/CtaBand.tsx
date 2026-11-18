@@ -14,7 +14,7 @@ export function CtaBand({ variant = "home" }: CtaBandProps) {
   return (
     <section aria-labelledby="cta-heading" className="bg-white pt-16 pb-12">
       <Container>
-        <div className="flex flex-col gap-8 overflow-hidden rounded-band bg-blush p-6 sm:p-10 lg:h-[320px] lg:flex-row lg:items-center lg:justify-between lg:px-12 lg:py-0">
+        <div className="flex flex-col gap-8 overflow-hidden rounded-band bg-blush p-6 sm:p-10 lg:min-h-[320px] lg:flex-row lg:items-center lg:justify-between lg:px-12 lg:py-10">
           <div className="max-w-[720px]">
             <Eyebrow>{content.eyebrow}</Eyebrow>
             <h2 id="cta-heading" className="mt-3">

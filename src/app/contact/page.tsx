@@ -15,7 +15,7 @@ import {
 import { CONTACT_SCHEMA } from "@/content/schemas";
 import { buildFaqSchema } from "@/lib/schema";
 import { PAGE_SEO, buildMetadata } from "@/lib/seo";
-import { CONTACT_EMAIL, WHATSAPP_URL } from "@/lib/site";
+import { CONTACT_EMAIL, CONTACT_PHONE_DISPLAY, CONTACT_PHONE_TEL, WHATSAPP_URL } from "@/lib/site";
 
 export const metadata: Metadata = buildMetadata(PAGE_SEO.contact);
 
@@ -114,6 +114,12 @@ function EnquirySection() {
               >
                 {CONTACT_EMAIL} <span aria-hidden="true">&nbsp;↗</span>
               </a>
+              <a
+                href={`tel:${CONTACT_PHONE_TEL}`}
+                className="inline-flex min-h-11 items-center text-t14 font-medium text-brand transition-colors duration-200 hover:text-brand-hover"
+              >
+                Call Us {CONTACT_PHONE_DISPLAY}
+              </a>
               {WHATSAPP_URL ? (
                 <a
                   href={WHATSAPP_URL}
@@ -121,7 +127,7 @@ function EnquirySection() {
                   rel="noopener noreferrer"
                   className="inline-flex min-h-11 items-center text-t14 font-medium text-brand transition-colors duration-200 hover:text-brand-hover"
                 >
-                  Message us on WhatsApp <span aria-hidden="true">&nbsp;↗</span>
+                  Message Us on WhatsApp <span aria-hidden="true">&nbsp;↗</span>
                 </a>
               ) : null}
             </div>

@@ -18,7 +18,7 @@ export interface NewsPost {
 export const NEWS_PAGE = {
   eyebrow: "NEWS",
   headingLead: "Ideas, guides and updates",
-  headingAccent: "for growing businesses.",
+  headingAccent: "for growing businesses",
   intro: "Practical notes on websites, software, mobile apps and AI from the MagentaGrid team.",
   imageAlt: "",
 };
@@ -165,7 +165,7 @@ export const NEWS_POSTS: NewsPost[] = [
           "Business details and contact information.",
           "A short description of each service you offer.",
           "Photos you would like to use.",
-          "Examples of websites you like, and why.",
+          "Examples of websites you like and why.",
         ],
       },
       {

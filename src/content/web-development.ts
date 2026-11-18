@@ -7,9 +7,9 @@ export interface NumberedItem {
 
 export const WEB_HERO = {
   seoHeading: "Web Development Company in Kerala for Small Businesses",
-  eyebrow: "CUSTOM WEBSITES. BUILT AROUND YOUR BUSINESS.",
+  eyebrow: "CUSTOM WEBSITES. BUILT AROUND YOUR BUSINESS",
   headingLead: "From your idea",
-  headingAccent: "to your website.",
+  headingAccent: "to your website",
   subline: "Thoughtful UI. Responsive development. A clear identity to your business.",
   body: "Affordable website design for small businesses in Kerala and across India. We draft the design around your business and build it to work across screens.",
   primaryCta: { label: "Compare Website Plans ↓", href: "#compare" },
@@ -25,14 +25,14 @@ export const WEB_HERO = {
 
 export const WEB_FOUNDATIONS = {
   eyebrow: "BUILT WITH PURPOSE",
-  headingLead: "Good design gets attention.",
-  headingAccent: "Good engineering earns trust.",
+  headingLead: "Good design gets attention",
+  headingAccent: "Good engineering earns trust",
   body: "Your website should look right, feel easy to use and perform reliably. Our engineering-first approach connects your brand with responsive layouts, clear content and room for your next stage of growth.",
 };
 
 export const WEB_CAPABILITIES = {
   eyebrow: "THE FOUNDATIONS OF A BETTER WEBSITE",
-  headingLead: "Built for people. Ready for business.",
+  headingLead: "Built for people. Ready for business",
   items: [
     { title: "Responsive by design", description: "A clear, comfortable experience on phones, tablets and larger screens." },
     { title: "Performance with purpose", description: "Lean page structures and performance checks that keep the experience moving." },
@@ -46,7 +46,7 @@ export const WEB_CAPABILITIES = {
 export const WEB_SOLUTIONS = {
   eyebrow: "START WITH THE WEBSITE YOU NEED",
   headingLead: "Your business,",
-  headingAccent: "beautifully translated online.",
+  headingAccent: "beautifully translated online",
   items: [
     { title: "Business websites", description: "A focused introduction or a detailed company website that makes your services easy to understand." },
     { title: "Online stores", description: "A product catalogue, shopping cart and payment integration planned around how you sell." },
@@ -56,8 +56,8 @@ export const WEB_SOLUTIONS = {
 
 export const WEB_ADDONS = {
   eyebrow: "EXTEND YOUR WEBSITE WHEN YOU’RE READY",
-  headingLead: "Start with the essentials.",
-  headingAccent: "Add what matters next.",
+  headingLead: "Start with the essentials",
+  headingAccent: "Add what matters next",
   body: "Choose additional features around your goals. Each add-on is quoted separately and agreed before we begin.",
   items: [
     { title: "SEO setup", description: "On-page, technical and local visibility work scoped around your business." },
@@ -70,16 +70,16 @@ export const WEB_ADDONS = {
 };
 
 export const WEB_LOCAL = {
-  eyebrow: "LOCAL CONTEXT. LONG-TERM THINKING.",
-  heading: "Made for your business. Built for your customers.",
+  eyebrow: "LOCAL CONTEXT. LONG-TERM THINKING",
+  heading: "Made for your business. Built for your customers",
   body: "Searching for website developers in Kochi or a web design company in Thrissur? Talk to us about affordable website development shaped around your customers, content and budget. We work with businesses across Kerala and India.",
   locations: ["Kochi / Cochin", "Thrissur", "Calicut", "Trivandrum", "Across India"],
 };
 
 export const WEB_FAQ = {
   eyebrow: "BEFORE WE BUILD",
-  headingLead: "Good questions.",
-  headingAccent: "Honest answers.",
+  headingLead: "Good questions",
+  headingAccent: "Honest answers",
   intro: "A little clarity about the website design and development process.",
 };
 

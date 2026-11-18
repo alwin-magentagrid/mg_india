@@ -42,6 +42,24 @@ export const PAGE_SEO = {
       "Business CMS website at ₹15,000: custom design plus an editing area to update text and images yourself, with handover. Taxes and hosting by quote.",
     path: "/services/web-development/business-cms",
   },
+  softwareDevelopment: {
+    title: "Custom Software Development Company in Kerala | MagentaGrid",
+    description:
+      "Custom software development company in Kerala. Business portals, dashboards, workflow systems and integrations built around how your team works.",
+    path: "/services/software-development",
+  },
+  mobileAppDevelopment: {
+    title: "Mobile App Development Company in Kerala | MagentaGrid",
+    description:
+      "Mobile app development company in Kerala. Customer and business apps for Android and iOS, from planning and design to testing and release.",
+    path: "/services/mobile-app-development",
+  },
+  aiSolutions: {
+    title: "AI Solutions and Automation Company in Kerala | MagentaGrid",
+    description:
+      "AI solutions for businesses in Kerala and across India. Assistants, knowledge search, workflow automation and AI integrations built around real tasks.",
+    path: "/services/ai-solutions",
+  },
   about: {
     title: "About MagentaGrid | IT Company in Palakkad, Kerala",
     description:
@@ -63,7 +81,7 @@ export const PAGE_SEO = {
   privacy: {
     title: "Privacy Policy | MagentaGrid India",
     description:
-      "How MagentaGrid Technologies collects, uses and protects personal data from website enquiries, and your rights under India’s DPDP Act, 2023.",
+      "How MagentaGrid Technologies collects, uses and protects personal data from website enquiries and your rights under India’s DPDP Act, 2023.",
     path: "/privacy-policy",
   },
   cookies: {

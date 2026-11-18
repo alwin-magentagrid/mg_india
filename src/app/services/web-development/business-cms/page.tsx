@@ -32,7 +32,7 @@ export default function BusinessCmsPage() {
         seoHeading={CMS_HERO.seoHeading}
         breadcrumb={[
           { label: "Home", href: "/" },
-          { label: "Web development", href: "/services/web-development" },
+          { label: "Web Development", href: "/services/web-development" },
           { label: "Business CMS" },
         ]}
         badge={CMS_HERO.badge}
